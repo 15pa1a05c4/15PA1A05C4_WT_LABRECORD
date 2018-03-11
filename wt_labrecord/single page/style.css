@@ -1,0 +1,43 @@
+body{
+font-family:'Arial',sans-serif;
+}
+#start,#sec,footer{
+color:white;
+}
+a{
+color:cyan;
+text-decoration:none;
+border-bottom:2px solid cyan;
+}
+#start ul{
+list-style-type:none;
+}
+#bg{
+text-align:center;
+background-image:url("bg.jpg");
+background-repeat:no-repeat;
+background-size:100%;
+	text-decoration:none;
+}
+#start{
+padding:3%;
+background-color:rgba(0,0,0,0.4);
+}
+#start li{
+display:inline;
+}
+#sec{
+text-align:left;
+padding-left:5%;
+background-color:#DF013A;
+
+}
+footer{
+padding-left:5%;
+background-color:#585858;
+padding-bottom:5%;
+}
+#mid,#ct{
+padding-left:5%;
+}
+

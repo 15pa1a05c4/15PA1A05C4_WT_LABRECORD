@@ -1,0 +1,26 @@
+<!--Write a program to increase the size of the image when the mouse over on the image.-->
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <img src="raji.jpg" id='p1' width="50px" height="50px">   
+    <img src="sruthi.jpg" id='p2' width="50px" height="50px">
+  </body>
+  <script>
+      document.getElementById('p1').onmouseover=function(){
+          document.getElementById("p1").style.width="100px";
+          document.getElementById("p1").style.height="100px";
+      }
+      document.getElementById('p1').onmouseleave=function(){
+          document.getElementById("p1").style.width="50px";
+          document.getElementById("p1").style.height="50px";
+      }
+       document.getElementById('p2').onmouseover=function(){
+          document.getElementById("p2").style.width="100px";
+          document.getElementById("p2").style.height="100px";
+      }
+      document.getElementById('p2').onmouseleave=function(){
+          document.getElementById("p2").style.width="50px";
+          document.getElementById("p2").style.height="50px";
+      }
+  </script>
+</html>

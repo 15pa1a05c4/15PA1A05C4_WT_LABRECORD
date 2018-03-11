@@ -1,0 +1,21 @@
+<!--Write a program to find the simple interest for given principal amount P, time T(in years) and
+rate R. Use the text field to enter the values of P,T,R. Display the result when clicked on submit.-->
+<!DOCTYPE HTML>
+<html>
+  <body>
+    P : <input type='text' id='p' placeholder="Enter the value">
+    T : <input type='text' id='t' placeholder="Enter the value">
+    R : <input type='text' id='r' placeholder="Enter the value">
+    <input type='submit'  id='s'><br>
+    <p id='re'></p>
+  </body>
+  <script>
+      document.getElementById('s').onclick=function(){
+      var p= document.getElementById('p').value;
+      var t= document.getElementById('t').value;
+      var r= document.getElementById('r').value;
+      var A=(p*t*r)/100;
+          document.getElementById('re').innerHTML = A;
+    }
+  </script>
+</html>

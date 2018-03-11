@@ -1,0 +1,45 @@
+body {
+	background-image: url(stardust.png);
+	text-align:center;
+	font-family: arial;
+}
+header {
+	background-color: #cd7474;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	background-color:cover;
+}
+header li{
+	display: inline;
+	color: white;	
+}
+.start {
+	padding: 2px 10px 10px 10px;
+	background-image:url(crossword.png);
+	margin :0px 70px;
+	text-align: left;
+}
+.start img{
+  width:30%;
+}
+#p{
+  color:blue;
+}
+h2 {
+	color: #609c9f;
+	text-align:center;
+}
+
+h3 {
+	color:green;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+#f {
+	color: white;
+}
+.next li {
+	display: inline;
+}

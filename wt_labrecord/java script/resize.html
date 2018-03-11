@@ -1,0 +1,13 @@
+<!--Write a program to display the resolution of the page when it is resized.-->
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <p id='p1'>lahari</p>    
+  </body>
+  <script>
+    window.onresize=function(){
+    myWidth = window.innerWidth; myHeight = window.innerHeight;
+    document.getElementById("p1").innerHTML = myWidth + "x" + myHeight;
+   };
+  </script>
+</html>

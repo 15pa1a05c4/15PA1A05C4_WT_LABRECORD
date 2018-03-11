@@ -1,0 +1,23 @@
+<!--Write a program to input a number in the text field and check whether the given number is
+prime number or not. Display the result below the text field when the number is entered.-->
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <input type='text' id='p' placeholder="Enter the value">
+     <p id='value'></p>
+  </body>
+  <script>
+      document.getElementById('p').onkeyup=function(){
+      var n= document.getElementById('p').value;
+      var i;
+      var c=0;
+      for(i=1;i<=n;i++)
+         if(n%i==0)
+           c++;
+      if(c==2)
+          document.getElementById('value').innerHTML = "Prime Number";
+      else
+         document.getElementById('value').innerHTML = "Not Prime Number";
+    }
+  </script>
+</html>

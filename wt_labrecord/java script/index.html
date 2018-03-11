@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>JS</title>
+  </head>
+  <body>
+      <input type="radio" id="red" >red
+      <input type="radio" id="green" >green
+      <input type="radio" id="blue"  >blue
+    <div id="m">
+      <p>This is 1st paragraph</p>
+    </div>
+  </body>
+  
+    <script>
+      document.getElementById("red").onclick=function(){
+        document.getElementById("m").style.backgroundColor="red";
+      }
+      document.getElementById("green").onclick=function(){
+        document.getElementById("m").style.backgroundColor="green";
+      }
+      document.getElementById("blue").onclick=function(){
+        document.getElementById("m").style.backgroundColor="blue";
+      }
+    </script>
+
+</html>

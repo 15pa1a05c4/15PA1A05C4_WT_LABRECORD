@@ -1,0 +1,36 @@
+body {
+	background-image: url(stardust.png);
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+header {
+	background-color: #cd7474;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color:cover;
+}
+header li{
+	display: inline;
+	color: white;	
+}
+.start {
+  padding:2px 10px 10px 10px;
+	background-image:url(crossword.png);
+	margin :0px 40px;
+	text-align: left;
+}
+h2 {
+	color: #609c9f;
+	text-align:center;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+#f {
+	color: white;
+}
+.border {
+    margin-top:4px;
+}

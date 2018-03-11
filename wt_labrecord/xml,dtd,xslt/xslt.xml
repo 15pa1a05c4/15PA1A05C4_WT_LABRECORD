@@ -1,0 +1,116 @@
+XML , DTD:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE clothinfo
+[
+<!ELEMENT clothinfo (name,description,type,(details+),price,manufacturer)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT details (size,material,color)>
+<!ELEMENT size (#PCDATA)>
+<!ELEMENT material (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT manufacturer (#PCDATA)>
+]>
+
+<clothinfo>
+  <cd>
+	<name>abc</name>
+	<description>nice</description>
+	<type>jeans</type>
+	<details>
+		<size>long</size>
+		<material>readymade</material>
+		<color>blue</color>
+	</details>
+	<price>500</price>
+	<manufacturer>mahi products</manufacturer>
+  </cd>
+  <cd>
+	<name>cde</name>
+	<description>simple</description>
+	<type>chudi</type>
+	<details>
+		<size>long</size>
+		<material>cotton</material>
+		<color>pink</color>
+	</details>
+	<price>1500</price>
+	<manufacturer>lahari products</manufacturer>
+  </cd>
+  <cd>
+	<name>bfd</name>
+	<description>tradition</description>
+	<type>saree</type>
+	<details>
+		<size>long</size>
+		<material>shifon</material>
+		<color>yellow</color>
+	</details>
+	<price>4500</price>
+	<manufacturer>maheswari</manufacturer>
+  </cd>
+</clothinfo>
+
+
+XML schema:
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="note">
+<xs:complexType>
+  <xs:sequence>
+    <xs:element name="name" type="xs:string"/>
+    <xs:element name="description" type="xs:string"/>
+    <xs:element name="type" type="xs:string"/>
+    <xs:element name="details" type="xs:string">
+    	 <xs:complexType>
+                 <xs:sequence>
+                     <xs:element name="zize" type="xs:string"/>
+                     <xs:element name="material" type="xs:string"/>
+                     <xs:element name="color" type="xs:string"/>
+                </xs:sequence>
+           </xs:complexType>
+     </xs:element>
+	<xs:element name="price" type="xs:integer"/>
+	<xs:element name="manufacturer" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
+
+
+XSLT:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<xsl:template match="/">
+  <html>
+  <body>
+    <h2>Cloth info</h2>
+    <table border="1">
+      <tr bgcolor="#9acd32">
+        <th>Name</th>
+        <th>Description</th>
+	<th>Type</th>
+	<th>Details</th>
+	<th>Price</th>
+	<th>Manufacturer</th>
+      </tr>
+      <xsl:for-each select="clothinfo/cd">
+        <tr>
+          <td><xsl:value-of select="name"/></td>
+          <td><xsl:value-of select="description"/></td>
+          <td><xsl:value-of select="type"/></td>
+          <td><xsl:value-of select="details"/></td>
+          <td><xsl:value-of select="price"/></td>
+          <td><xsl:value-of select="manufacturer"/></td>
+        </tr>
+      </xsl:for-each>
+    </table>
+  </body>
+  </html>
+</xsl:template>
+
+</xs:element>
