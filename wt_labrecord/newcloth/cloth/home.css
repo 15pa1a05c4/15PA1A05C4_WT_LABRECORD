@@ -1,0 +1,29 @@
+.header {	
+	text-align:center;
+	
+}
+.nav li {
+	display:inline;
+}
+.nav li a {
+	
+	text-decoration:none;
+}
+body{
+    background-image:url(images/pic1.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.content {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.disp {
+    background-color: white;
+    padding: 20px;
+}
+.form{
+	display:inline;
+}
